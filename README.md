@@ -2,7 +2,7 @@
 
 A responsive Spotify-inspired web player built using **HTML5** and **CSS3**. This project recreates the user interface of Spotify's web player, focusing on modern UI design, responsive layouts, and clean front-end development practices.
 
-![Spotify Clone Screenshot](../assest/pic1.png)
+![Spotify Clone Screenshot](./assest/pic1.png)
 
 ---
 
@@ -62,18 +62,6 @@ Spotify-Clone/
 ```
 
 ---
-
-## 📸 Screenshots
-
-### Home Page
-
-Add screenshots of your project here.
-
-Example:
-
-```md
-![Home Page](./assets/homepage.png)
-```
 
 ---
 
