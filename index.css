@@ -1,0 +1,380 @@
+ *{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  
+  color: white;
+  overflow: hidden;
+  margin: 0%;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    display: flex;
+    height:100vh;
+    padding: 0.5rem;
+
+}
+
+.sidebar{
+    background-color:black;
+    width:350px;
+    border-radius: 1rem; /*60px */
+    margin-right: 0.5rem;
+}
+
+.main-content{
+    background-color:#121212;
+    flex:1;
+    border-radius: 1rem; /*60px */
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+    
+}
+
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.music-player{
+    background-color:black;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    height: 72px;
+
+}
+
+a{
+   
+    text-decoration: none;
+    
+}
+.nav{
+    background-color:#121212;
+     border-radius: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100px;
+     padding:0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+
+.nav-option:hover {
+    opacity: 1;
+    
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+    
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library{
+    background-color:#121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top:0.5rem ;
+    padding: 0.5rem 0.75rem;
+
+
+}
+
+.options{
+    display:flex;
+     justify-content:space-between;
+     
+}
+
+
+.lib-options img {
+    height: 1.25rem;
+    width: 1.5rem;
+ 
+}
+
+.icons{
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right:1rem ;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    padding: 0.75rem;
+}
+
+.badge{
+    color: black;
+    border: none;
+    background-color: white;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height:2rem;
+    width:fit-content;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.badge i {
+    background-color: #121212;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-start; /* Align everything to the left margin */
+    align-items: center;
+    gap: 1rem; /* spacing between items */
+    background-color: #121212;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    
+    z-index: 10;
+}
+
+
+.sticky-nav-icons-left,
+.sticky-nav-icons-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.sticky-nav-icons-right {
+    margin-left: auto;
+
+}
+
+.sticky-nav-icons-right span{
+    margin-top: 0.75rem;
+    font-size: medium;
+
+}
+.dark-badge{
+    background-color:black;
+    color:white;
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+
+.card:hover {
+    background-color: #252525;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width:90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+    display: flex;
+    justify-content:left;
+    margin-top: 1rem;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.album img{
+    height: 50px;
+    margin: 0 0 0 1rem;
+
+    
+    
+}
+
+.song-info{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 1rem;
+
+}
+
+.song-info p{
+    margin: 0;
+}
+.song-name{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.artist{
+    font-size: 12px;
+    opacity: 0.7;
+}
+.symbols{
+    margin: 1rem 0 0 1rem;
+
+}
+
+.player{
+    width: 50%;
+
+}
+
+
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.player-controls-icon{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.player-controls-icon:hover{
+    opacity: 1;
+}
+
+.progress-bar{
+    width: 70%;
+    
+}
+
+.contols{
+    width:25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    
+}
+
+
+@media (max-width: 768px) {
+
+    /* Hide sidebar on mobile */
+    .sidebar {
+        display: none;
+    }
+
+    /* Make cards take full width */
+    .card {
+        width: 90%;
+    }
+
+    /* Hide some navbar buttons */
+    .hide {
+        display: none;
+    }
+
+    /* Reduce heading size */
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Make music player controls smaller */
+    .player-controls-icon {
+        height: 1rem;
+    }
+}
+
+
